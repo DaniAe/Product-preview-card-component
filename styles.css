@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 93%;
+  background-color: white;
+  border-radius: 0.9rem;
+}
+
+#perfume-image {
+  width: 100%;
+  border-radius: 0.9rem 0.9rem 0 0;
+}
+
+.product-card-text {
+  padding: 2rem;
+}
+
+.grey-color {
+  color: hsl(228, 12%, 48%);
+}
+
+#perfume-text {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  padding: 1rem 0 1.5rem 0;
+}
+
+p {
+  font-size: 1.23rem;
+  line-height: 2rem;
+}
+
+.price {
+  padding: 2rem 0 1.5rem 0;
+  display:inline-flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 1.23rem;
+}
+
+.price span:first-of-type {
+  font-size: 2.75rem;
+  color: hsl(158, 36%, 37%);
+  padding-right: 2rem;
+}
+
+button {
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding: 1.3rem;
+  width: 100%;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
+}
+
+.mont-font {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.mont-font.bold {
+  font-weight: 700;
+}
+
+.fraun-font {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    transform: translate(0, 15%);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  #perfume-image {
+    border-radius: 0.9rem 0 0 0.9rem;
+    height: 100%;
+  }
+
+  .product-card-text {
+    width: 80%;
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 4.25rem;
+    line-height: 4rem;
+    padding: 2.5rem 0;
+  }
+
+  #perfume-text, p, .price span:last-of-type {
+    font-size: 1.75rem;
+    line-height: 3rem;
+  }
+
+  .price span:first-of-type {
+    font-size: 4rem;
+  }
+
+  .price {
+    padding: 3rem 0;
+  }
+
+  button {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  button img {
+    width: 1.75rem;
+  }
+}
